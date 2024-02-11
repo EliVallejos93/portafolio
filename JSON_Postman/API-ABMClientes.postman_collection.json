@@ -1,0 +1,330 @@
+{
+	"info": {
+		"_postman_id": "00a47f5d-b7fc-4c91-b63f-ec1b8ba2f8a8",
+		"name": "API-ABMClientes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28009638"
+	},
+	"item": [
+		{
+			"name": "api",
+			"item": [
+				{
+					"name": "Clientes",
+					"item": [
+						{
+							"name": "/api/Clientes/Insert",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 0,\n    \"nombre\": \"Elias\",\n    \"apellido\": \"Vallejos\",\n    \"fechaNacimiento\": \"1993-03-19T00:00:00.000\",\n    \"cuit\": \"20373549496\",\n    \"domicilio\": \"calle 115\",\n    \"telefono\": \"987987\",\n    \"email\": \"elias.progres@gmail.com\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Clientes/Insert",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Clientes",
+										"Insert"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id\": \"<integer>\",\n  \"nombres\": \"<string>\",\n  \"apellidos\": \"<string>\",\n  \"fechaNacimiento\": \"<dateTime>\",\n  \"cuit\": \"<string>\",\n  \"domicilio\": \"<string>\",\n  \"telefonoCelular\": \"<string>\",\n  \"email\": \"<email>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Clientes/Insert",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Clientes",
+												"Insert"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "/api/Clientes/GetAll",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/Clientes/GetAll",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Clientes",
+										"GetAll"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/Clientes/GetAll",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Clientes",
+												"GetAll"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "/api/Clientes/GetID",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/Clientes/GetID?id=4",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Clientes",
+										"GetID"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "4"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/Clientes/GetID?id=<integer>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Clientes",
+												"GetID"
+											],
+											"query": [
+												{
+													"key": "id",
+													"value": "<integer>"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "/api/Clientes/Search",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/Clientes/Search?nombre=Elias",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Clientes",
+										"Search"
+									],
+									"query": [
+										{
+											"key": "nombre",
+											"value": "Elias"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/Clientes/Search?nombre=<string>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Clientes",
+												"Search"
+											],
+											"query": [
+												{
+													"key": "nombre",
+													"value": "<string>"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "/api/Clientes/Update",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": \"0\",\n  \"nombre\": \"Andres\",\n  \"apellido\": \"Watson\",\n  \"fechaNacimiento\": \"1993-03-19T00:00:00.000\",\n  \"cuit\": \"20373549496\",\n  \"domicilio\": \"calle 115\",\n  \"telefono\": \"987321\",\n  \"email\": \"elias.progres@gmail.com\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Clientes/Update",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Clientes",
+										"Update"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id\": \"<integer>\",\n  \"nombres\": \"<string>\",\n  \"apellidos\": \"<string>\",\n  \"fechaNacimiento\": \"<dateTime>\",\n  \"cuit\": \"<string>\",\n  \"domicilio\": \"<string>\",\n  \"telefonoCelular\": \"<string>\",\n  \"email\": \"<email>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Clientes/Update",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Clientes",
+												"Update"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "/"
+		}
+	]
+}

@@ -1,0 +1,4 @@
+Front = "CHALLENGEIntuit-Front" (Angular)
+Back = "CHALLENGEIntuit-Back" (.NET)
+Json para Postman = "API-ABMClientes.postman_collection.json" y "API-Clima.postman_collection.json" (Postman)
+BD = "CHALLENGE-Intuit.bak" (SQL Server)
